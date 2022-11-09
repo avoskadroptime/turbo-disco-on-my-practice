@@ -1,0 +1,1421 @@
+2022-11-09 16:09:09 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:09:09 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => '2cDb-Y5hLbmNHgLuvUwl0PlvYlMuJrXqHQ-u3E_7sNuelIyQtgtkzb5kcannPXSpih4XJUoS-rNbRZmaBo37qQ=='
+    'Generator' => [
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'useSchemaName' => '1'
+        'tableName' => 'user'
+        'standardizeCapitals' => '0'
+        'singularize' => '0'
+        'modelClass' => 'user'
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'generateRelations' => 'all'
+        'generateJunctionRelationMode' => 'table'
+        'generateRelationsFromCurrentSchema' => '1'
+        'useClassConstant' => '1'
+        'generateLabelsFromComments' => '1'
+        'generateQuery' => '0'
+        'queryNs' => 'app\\models'
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'generate' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '992'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://basic'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56974'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999349.043
+    'REQUEST_TIME' => 1667999349
+]
+2022-11-09 16:09:13 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:09:13 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = [
+    '_csrf' => 'noolRANJWQ4PpnD_Pk_ehBYHL5cXpfLJQsTSFD1c3cbZ3nItOyMQejzcA7hkPo_9ZXZa4XORvZAEjuVSdCqWtA=='
+    'Generator' => [
+        'db' => 'db'
+        'useTablePrefix' => '0'
+        'useSchemaName' => '1'
+        'tableName' => 'user'
+        'standardizeCapitals' => '0'
+        'singularize' => '0'
+        'modelClass' => 'user'
+        'ns' => 'app\\models'
+        'baseClass' => 'yii\\db\\ActiveRecord'
+        'generateRelations' => 'all'
+        'generateJunctionRelationMode' => 'table'
+        'generateRelationsFromCurrentSchema' => '1'
+        'useClassConstant' => '1'
+        'generateLabelsFromComments' => '1'
+        'generateQuery' => '0'
+        'queryNs' => 'app\\models'
+        'queryBaseClass' => 'yii\\db\\ActiveQuery'
+        'enableI18N' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'generate' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '992'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ORIGIN' => 'http://basic'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56975'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999353.371
+    'REQUEST_TIME' => 1667999353
+]
+2022-11-09 16:09:32 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:09:32 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56976'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999372.72
+    'REQUEST_TIME' => 1667999372
+]
+2022-11-09 16:10:10 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:10:10 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56986'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999410.534
+    'REQUEST_TIME' => 1667999410
+]
+2022-11-09 16:10:10 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:10:10 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56987'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999410.7
+    'REQUEST_TIME' => 1667999410
+]
+2022-11-09 16:10:10 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:10:10 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56988'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999410.901
+    'REQUEST_TIME' => 1667999410
+]
+2022-11-09 16:10:11 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:10:11 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56989'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999411.085
+    'REQUEST_TIME' => 1667999411
+]
+2022-11-09 16:10:11 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:10:11 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56990'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999411.309
+    'REQUEST_TIME' => 1667999411
+]
+2022-11-09 16:10:11 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:10:11 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56991'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999411.661
+    'REQUEST_TIME' => 1667999411
+]
+2022-11-09 16:10:17 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:10:17 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56992'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999417.634
+    'REQUEST_TIME' => 1667999417
+]
+2022-11-09 16:10:25 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][error][Error] Error: Class 'app\models\User' not found in C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php:698
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#13 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#14 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#16 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#17 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#18 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#19 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#20 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#21 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#22 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#23 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->__construct(Array)
+#24 {main}
+2022-11-09 16:10:25 [127.0.0.1][-][tj3u9ponvh90jo8bo6cdmk1mksfng4ec][info][application] $_GET = [
+    'r' => 'gii'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tj3u9ponvh90jo8bo6cdmk1mksfng4ec'
+    '_identity' => 'ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+    '__id' => '100'
+    '__authKey' => 'test100key'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=tj3u9ponvh90jo8bo6cdmk1mksfng4ec; _identity=ed2ec5ab946a01faecc1869cd974f78f8ca5d852cfc4d9f8bae4a230084ba225a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '56995'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii'
+    'REQUEST_URI' => '/web/index.php?r=gii'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1667999425.856
+    'REQUEST_TIME' => 1667999425
+]
+2022-11-09 17:06:31 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][error][ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in C:\OSPanel\domains\basic\views\layouts\main.php:43
+Stack trace:
+#0 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', Array)
+#1 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(422): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(app\controllers\SiteController))
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(408): yii\base\Controller->renderContent('<div class="sit...')
+#3 C:\OSPanel\domains\basic\controllers\SiteController.php(64): yii\base\Controller->render('index')
+#4 [internal function]: app\controllers\SiteController->actionIndex()
+#5 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#7 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('', Array)
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2022-11-09 17:06:31 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+    'PHPSESSID' => 'pcciq1647v6jqkda6cfk3l2lul78fafu'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D; PHPSESSID=pcciq1647v6jqkda6cfk3l2lul78fafu'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '57597'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1668002791.905
+    'REQUEST_TIME' => 1668002791
+]
+2022-11-09 17:43:55 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][error][Error] Error: Access to undeclared static property: app\models\User::$users in C:\OSPanel\domains\basic\models\User.php:120
+Stack trace:
+#0 C:\OSPanel\domains\basic\models\LoginForm.php(76): app\models\User::findByUsername('admin')
+#1 C:\OSPanel\domains\basic\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\validators\InlineValidator.php(77): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'admin')
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#5 C:\OSPanel\domains\basic\models\LoginForm.php(62): yii\base\Model->validate()
+#6 C:\OSPanel\domains\basic\controllers\SiteController.php(79): app\models\LoginForm->login()
+#7 [internal function]: app\controllers\SiteController->actionLogin()
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2022-11-09 17:43:55 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'Xcdw-WRagQhJbZ2rYWXq46z5RoDWCCk9MREn24XFZSEakyeQXDDIfHoX7uw7FLua34gz9rI8ZmR3WxCdzLMuUw=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+    'PHPSESSID' => 'pcciq1647v6jqkda6cfk3l2lul78fafu'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '228'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://basic'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D; PHPSESSID=pcciq1647v6jqkda6cfk3l2lul78fafu'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '57956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1668005035.42
+    'REQUEST_TIME' => 1668005035
+]
+2022-11-09 17:44:28 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][error][Error] Error: Access to undeclared static property: app\models\User::$users in C:\OSPanel\domains\basic\models\User.php:120
+Stack trace:
+#0 C:\OSPanel\domains\basic\models\LoginForm.php(76): app\models\User::findByUsername('demo')
+#1 C:\OSPanel\domains\basic\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\validators\InlineValidator.php(77): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'demo')
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#5 C:\OSPanel\domains\basic\models\LoginForm.php(62): yii\base\Model->validate()
+#6 C:\OSPanel\domains\basic\controllers\SiteController.php(79): app\models\LoginForm->login()
+#7 [internal function]: app\controllers\SiteController->actionLogin()
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2022-11-09 17:44:28 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'cRfjZVJzsAYABtyzIeEoE6aUGjyOViELL675HkEnaqU2Q7QMahn5cjN8r_R7kHlq1eVvSupiblJp5M5YCFEh1w=='
+    'LoginForm' => [
+        'username' => 'demo'
+        'password' => 'demo'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+    'PHPSESSID' => 'pcciq1647v6jqkda6cfk3l2lul78fafu'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '226'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://basic'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D; PHPSESSID=pcciq1647v6jqkda6cfk3l2lul78fafu'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '57938'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1668005068.581
+    'REQUEST_TIME' => 1668005068
+]
+2022-11-09 17:47:36 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][error][Error] Error: Access to undeclared static property: app\models\User::$users in C:\OSPanel\domains\basic\models\User.php:120
+Stack trace:
+#0 C:\OSPanel\domains\basic\models\LoginForm.php(76): app\models\User::findByUsername('admin')
+#1 C:\OSPanel\domains\basic\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\validators\InlineValidator.php(77): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'admin')
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#5 C:\OSPanel\domains\basic\models\LoginForm.php(62): yii\base\Model->validate()
+#6 C:\OSPanel\domains\basic\controllers\SiteController.php(79): app\models\LoginForm->login()
+#7 [internal function]: app\controllers\SiteController->actionLogin()
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2022-11-09 17:47:36 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'SaDhIU6n2DChMVKI9dnleLZjn-UFWc7eNZPOt27uEUQO9LZIds2RRJJLIc-vqLQBxRLqk2FtgYdz2fnxJ5haNg=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+    'PHPSESSID' => 'pcciq1647v6jqkda6cfk3l2lul78fafu'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '228'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://basic'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D; PHPSESSID=pcciq1647v6jqkda6cfk3l2lul78fafu'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '58091'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1668005256.696
+    'REQUEST_TIME' => 1668005256
+]
+2022-11-09 17:48:06 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][error][Error] Error: Access to undeclared static property: app\models\User::$users in C:\OSPanel\domains\basic\models\User.php:120
+Stack trace:
+#0 C:\OSPanel\domains\basic\models\LoginForm.php(76): app\models\User::findByUsername('admin')
+#1 C:\OSPanel\domains\basic\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#2 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\validators\InlineValidator.php(77): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'admin')
+#3 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\InlineValidator->validateAttribute(Object(app\models\LoginForm), 'password')
+#4 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Model.php(360): yii\validators\Validator->validateAttributes(Object(app\models\LoginForm), Array)
+#5 C:\OSPanel\domains\basic\models\LoginForm.php(62): yii\base\Model->validate()
+#6 C:\OSPanel\domains\basic\controllers\SiteController.php(79): app\models\LoginForm->login()
+#7 [internal function]: app\controllers\SiteController->actionLogin()
+#8 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('login', Array)
+#11 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#12 C:\OSPanel\domains\basic\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\basic\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2022-11-09 17:48:06 [127.0.0.1][-][pcciq1647v6jqkda6cfk3l2lul78fafu][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'fZwQ9SezhdTDm218P6KhjGw2y6f42Wa1UogLpviUlC46yEecH9nMoPDhHjtl0_D1H0e-0ZztKewUwjzgseLfXA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr\";}'
+    'PHPSESSID' => 'pcciq1647v6jqkda6cfk3l2lul78fafu'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tojugs'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'basic'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '228'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://basic'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 OPR/89.0.4447.91'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://basic/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf=a1cbda37c943b5a597d56a1e8a17b0c50907bc67d2993be134624cb6a30a7b2da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GTWi8jIt3zsGZqQysquvd4OYFJ7FIvKr%22%3B%7D; PHPSESSID=pcciq1647v6jqkda6cfk3l2lul78fafu'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP_7.2\\ext;c:\\ospanel\\modules\\php\\PHP_7.2\\pear;c:\\ospanel\\modules\\php\\PHP_7.2\\pear\\bin;c:\\ospanel\\modules\\php\\PHP_7.2;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.7-Win10\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4\\bin;c:\\ospanel\\modules\\http\\Apache_2.4-PHP_7.2-7.4;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'basic'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/basic'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/basic/web/index.php'
+    'REMOTE_PORT' => '58092'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1668005286.144
+    'REQUEST_TIME' => 1668005286
+]
